@@ -4,7 +4,7 @@ import "./globals.css";
 // Configuración de herramientas de marketing (Meta Pixel y Microsoft Clarity)
 const CONFIG = {
   metaPixelId: '912370065207407', // Ingresa tu ID de Meta Pixel aquí. Ej: '1234567890'
-  clarityId: '',   // Ingresa tu ID de Microsoft Clarity aquí. Ej: 'ab12cd34ef'
+  clarityId: 'xce86wy12m',   // Ingresa tu ID de Microsoft Clarity aquí. Ej: 'ab12cd34ef'
 };
 
 export const metadata = {

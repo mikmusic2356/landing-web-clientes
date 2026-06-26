@@ -212,7 +212,7 @@ export default function Home() {
       title: 'Restaurantes',
       name: 'Burger & Co.',
       price: '$12.99',
-      image: '/images/restaurante.png',
+      image: '/images/restaurante.avif',
       btnText: 'PEDIR POR WHATSAPP',
       emoji: '🍔'
     },
@@ -220,7 +220,7 @@ export default function Home() {
       title: 'Frutería',
       name: 'Mercado Fresco',
       price: 'Domicilio Express',
-      image: '/images/fruteria.png',
+      image: '/images/fruteria.avif',
       btnText: 'HACER PEDIDO',
       emoji: '🍎'
     }
@@ -355,7 +355,7 @@ export default function Home() {
                     </div>
                     <div className={styles.phoneContent}>
                       <div className={styles.phoneStoreCard}>
-                        <div className={styles.phoneStoreImg} style={{ backgroundImage: 'url("/images/zapatillas.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                        <div className={styles.phoneStoreImg} style={{ backgroundImage: 'url("/images/zapatillas.avif")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                         </div>
                         <span className={styles.phoneStoreName}>Zapatillas Deportivas Pro</span>
                         <span className={styles.phoneStorePrice}>$59.99 USD</span>

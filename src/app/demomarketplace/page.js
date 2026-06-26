@@ -11,9 +11,9 @@ const NICHES_CONFIG = {
     name: "Gimnasio",
     icon: "🏋️‍♂️",
     slides: [
-      { tag: "OFERTA EXCLUSIVA", title: "¡20% DE DESCUENTO EN PLAN ANUAL!", desc: "Matricúlate hoy usando el código promocional FIT20 y accede a todas nuestras sedes VIP.", image: "/images/demo/gym.png" },
-      { tag: "CLASE GRATIS", title: "¡AGENDA TU SESIÓN DE PRUEBA 100% GRATIS!", desc: "Escríbenos por WhatsApp para coordinar tu pase de cortesía de 1 día con entrenador.", image: "/images/demo/gym2.png" },
-      { tag: "REGALO DE BIENVENIDA", title: "¡CREATINA PURA GRATIS CON TU MATRÍCULA!", desc: "Llévate un bote de suplementación y un shaker premium con tu plan trimestral o anual.", image: "/images/demo/gym3.png" }
+      { tag: "OFERTA EXCLUSIVA", title: "¡20% DE DESCUENTO EN PLAN ANUAL!", desc: "Matricúlate hoy usando el código promocional FIT20 y accede a todas nuestras sedes VIP.", image: "/images/demo/gym.avif" },
+      { tag: "CLASE GRATIS", title: "¡AGENDA TU SESIÓN DE PRUEBA 100% GRATIS!", desc: "Escríbenos por WhatsApp para coordinar tu pase de cortesía de 1 día con entrenador.", image: "/images/demo/gym2.avif" },
+      { tag: "REGALO DE BIENVENIDA", title: "¡CREATINA PURA GRATIS CON TU MATRÍCULA!", desc: "Llévate un bote de suplementación y un shaker premium con tu plan trimestral o anual.", image: "/images/demo/gym3.avif" }
     ],
     categories: ["Todos", "Equipamiento", "Suplementos", "Accesorios"],
     theme: {
@@ -35,9 +35,9 @@ const NICHES_CONFIG = {
     name: "Moda / Ropa",
     icon: "👕",
     slides: [
-      { tag: "BIENVENIDA", title: "¡ENVÍO GRATIS EN TU PRIMER PEDIDO!", desc: "Utiliza el código FIRSTFREE en el carrito. Válido para envíos a todo el territorio nacional.", image: "/images/demo/ropa.png" },
-      { tag: "TEMPORADA", title: "¡COLECCIÓN DE VERANO: 15% DE DESCUENTO!", desc: "Obtén rebajas exclusivas con el código VERANO15 en camisas y pantalones seleccionados.", image: "/images/demo/ropa2.png" },
-      { tag: "EDICIÓN LIMITADA", title: "¡UNIDADES ULTRA LIMITADAS POR DISEÑO!", desc: "Prendas confeccionadas a mano con algodón orgánico premium. Solo 20 piezas exclusivas.", image: "/images/demo/ropa3.png" }
+      { tag: "BIENVENIDA", title: "¡ENVÍO GRATIS EN TU PRIMER PEDIDO!", desc: "Utiliza el código FIRSTFREE en el carrito. Válido para envíos a todo el territorio nacional.", image: "/images/demo/ropa.avif" },
+      { tag: "TEMPORADA", title: "¡COLECCIÓN DE VERANO: 15% DE DESCUENTO!", desc: "Obtén rebajas exclusivas con el código VERANO15 en camisas y pantalones seleccionados.", image: "/images/demo/ropa2.avif" },
+      { tag: "EDICIÓN LIMITADA", title: "¡UNIDADES ULTRA LIMITADAS POR DISEÑO!", desc: "Prendas confeccionadas a mano con algodón orgánico premium. Solo 20 piezas exclusivas.", image: "/images/demo/ropa3.avif" }
     ],
     categories: ["Todos", "Camisas", "Pantalones", "Accesorios"],
     theme: {
@@ -59,9 +59,9 @@ const NICHES_CONFIG = {
     name: "Calzado",
     icon: "👟",
     slides: [
-      { tag: "DESCUENTO DE LANZAMIENTO", title: "¡10% DE DESCUENTO ADICIONAL EN TIENDA!", desc: "Código: SNEAKERS10. Válido en toda la línea de tenis urbanos y zapatillas running.", image: "/images/demo/calzado.png" },
-      { tag: "ENVÍO RÁPIDO", title: "¡ENTREGA EXPRÉS 24 HORAS SIN COSTO!", desc: "Realiza tu pedido hoy y estrena mañana. Garantía de logística prioritaria asegurada.", image: "/images/demo/calzado2.png" },
-      { tag: "GARANTÍA TOTAL", title: "¡PRUÉBALOS POR 30 DÍAS SIN COMPROMISOS!", desc: "¿No te ajustó la talla o no te gustaron? Te devolvemos el dinero de inmediato.", image: "/images/demo/calzado3.png" }
+      { tag: "DESCUENTO DE LANZAMIENTO", title: "¡10% DE DESCUENTO ADICIONAL EN TIENDA!", desc: "Código: SNEAKERS10. Válido en toda la línea de tenis urbanos y zapatillas running.", image: "/images/demo/calzado.avif" },
+      { tag: "ENVÍO RÁPIDO", title: "¡ENTREGA EXPRÉS 24 HORAS SIN COSTO!", desc: "Realiza tu pedido hoy y estrena mañana. Garantía de logística prioritaria asegurada.", image: "/images/demo/calzado2.avif" },
+      { tag: "GARANTÍA TOTAL", title: "¡PRUÉBALOS POR 30 DÍAS SIN COMPROMISOS!", desc: "¿No te ajustó la talla o no te gustaron? Te devolvemos el dinero de inmediato.", image: "/images/demo/calzado3.avif" }
     ],
     categories: ["Todos", "Deportivo", "Casual", "Formal"],
     theme: {
@@ -83,9 +83,9 @@ const NICHES_CONFIG = {
     name: "Mascotas",
     icon: "🐶",
     slides: [
-      { tag: "ALIMENTACIÓN SALUDABLE", title: "¡15% OFF EN NUTRICIÓN SÚPER PREMIUM!", desc: "Código: PUPPY15. Alimento natural para cachorros y adultos formulado por expertos.", image: "/images/demo/mascotas.png" },
-      { tag: "OBSEQUIO ESPECIAL", title: "¡KIT DE JUGUETES DE BIENVENIDA GRATIS!", desc: "Llévate un set de mordedores interactivos por compras de catálogo superiores a $50.", image: "/images/demo/mascotas2.png" },
-      { tag: "ENVÍO EXPRESS", title: "¡ENTREGAS EN 2 HORAS A DOMICILIO!", desc: "El mejor servicio prioritario de reparto para que nunca le falte alimento a tu mejor amigo.", image: "/images/demo/mascotas3.png" }
+      { tag: "ALIMENTACIÓN SALUDABLE", title: "¡15% OFF EN NUTRICIÓN SÚPER PREMIUM!", desc: "Código: PUPPY15. Alimento natural para cachorros y adultos formulado por expertos.", image: "/images/demo/mascotas.avif" },
+      { tag: "OBSEQUIO ESPECIAL", title: "¡KIT DE JUGUETES DE BIENVENIDA GRATIS!", desc: "Llévate un set de mordedores interactivos por compras de catálogo superiores a $50.", image: "/images/demo/mascotas2.avif" },
+      { tag: "ENVÍO EXPRESS", title: "¡ENTREGAS EN 2 HORAS A DOMICILIO!", desc: "El mejor servicio prioritario de reparto para que nunca le falte alimento a tu mejor amigo.", image: "/images/demo/mascotas3.avif" }
     ],
     categories: ["Todos", "Alimento", "Juguetes", "Higiene"],
     theme: {
@@ -107,9 +107,9 @@ const NICHES_CONFIG = {
     name: "Odontología",
     icon: "🦷",
     slides: [
-      { tag: "DIAGNÓSTICO DIGITAL", title: "¡VALORACIÓN 3D E INFORME INICIAL GRATUITO!", desc: "Agenda hoy por WhatsApp y obtén tu escaneo odontológico gratis para tu ortodoncia.", image: "/images/demo/odontologia.png" },
-      { tag: "ESTÉTICA DENTAL", title: "¡30% OFF EN BLANQUEAMIENTO LED PRO!", desc: "Consigue la sonrisa blanca que deseas con tecnología láser indolora de alta gama.", image: "/images/demo/odontologia2.png" },
-      { tag: "FACILIDADES DE PAGO", title: "¡ALINEADORES INVISIBLES SIN CUOTA INICIAL!", desc: "Financiamiento directo con pagos mensuales flexibles adaptados a tu presupuesto.", image: "/images/demo/odontologia3.png" }
+      { tag: "DIAGNÓSTICO DIGITAL", title: "¡VALORACIÓN 3D E INFORME INICIAL GRATUITO!", desc: "Agenda hoy por WhatsApp y obtén tu escaneo odontológico gratis para tu ortodoncia.", image: "/images/demo/odontologia.avif" },
+      { tag: "ESTÉTICA DENTAL", title: "¡30% OFF EN BLANQUEAMIENTO LED PRO!", desc: "Consigue la sonrisa blanca que deseas con tecnología láser indolora de alta gama.", image: "/images/demo/odontologia2.avif" },
+      { tag: "FACILIDADES DE PAGO", title: "¡ALINEADORES INVISIBLES SIN CUOTA INICIAL!", desc: "Financiamiento directo con pagos mensuales flexibles adaptados a tu presupuesto.", image: "/images/demo/odontologia3.avif" }
     ],
     categories: ["Todos", "Ortodoncia", "Estética", "Higiene"],
     theme: {
@@ -131,9 +131,9 @@ const NICHES_CONFIG = {
     name: "Tecnología",
     icon: "⌚",
     slides: [
-      { tag: "REGALO EXCLUSIVO", title: "¡CORREA DE CUERO DE REGALO CON TU COMPRA!", desc: "Adquiere el Smartwatch Titanium Edition hoy y llévate una pulsera extra sin costo.", image: "/images/demo/tecnologia.png" },
-      { tag: "AUDIO PRO", title: "¡10% OFF EN AUDÍFONOS CON CANCELACIÓN DE RUIDO!", desc: "Código promocional: AUDIO10. Vive la música con sonido envolvente Hifi de alta resolución.", image: "/images/demo/tecnologia2.png" },
-      { tag: "COMPRA SEGURA", title: "¡GARANTÍA OFICIAL EXTENDIDA DE 18 MESES!", desc: "Aseguramos la máxima calidad. Soporte técnico preferencial y reemplazo inmediato.", image: "/images/demo/tecnologia3.png" }
+      { tag: "REGALO EXCLUSIVO", title: "¡CORREA DE CUERO DE REGALO CON TU COMPRA!", desc: "Adquiere el Smartwatch Titanium Edition hoy y llévate una pulsera extra sin costo.", image: "/images/demo/tecnologia.avif" },
+      { tag: "AUDIO PRO", title: "¡10% OFF EN AUDÍFONOS CON CANCELACIÓN DE RUIDO!", desc: "Código promocional: AUDIO10. Vive la música con sonido envolvente Hifi de alta resolución.", image: "/images/demo/tecnologia2.avif" },
+      { tag: "COMPRA SEGURA", title: "¡GARANTÍA OFICIAL EXTENDIDA DE 18 MESES!", desc: "Aseguramos la máxima calidad. Soporte técnico preferencial y reemplazo inmediato.", image: "/images/demo/tecnologia3.avif" }
     ],
     categories: ["Todos", "Smartwatches", "Auriculares", "Cargadores"],
     theme: {
@@ -155,9 +155,9 @@ const NICHES_CONFIG = {
     name: "Servicios",
     icon: "💼",
     slides: [
-      { tag: "DIAGNÓSTICO COMERCIAL", title: "¡AUDITORÍA DE EMBUDOS DE VENTA GRATUITA!", desc: "Analizamos tu sistema actual de prospección por WhatsApp y te damos soluciones de mejora.", image: "/images/demo/servicios.png" },
-      { tag: "GARANTÍA DE TIEMPO", title: "¡LANDING PAGE EN 48 HORAS O ES GRATIS!", desc: "Te garantizamos la entrega ultra rápida de tu sitio web listo para vender bajo contrato.", image: "/images/demo/servicios2.png" },
-      { tag: "PRODUCCIÓN MENSUAL", title: "¡15% DE DESCUENTO EN GESTIÓN DE ANUNCIOS!", desc: "Código: GROWTH15. Potencia tu captación con campañas optimizadas por profesionales.", image: "/images/demo/servicios3.png" }
+      { tag: "DIAGNÓSTICO COMERCIAL", title: "¡AUDITORÍA DE EMBUDOS DE VENTA GRATUITA!", desc: "Analizamos tu sistema actual de prospección por WhatsApp y te damos soluciones de mejora.", image: "/images/demo/servicios.avif" },
+      { tag: "GARANTÍA DE TIEMPO", title: "¡LANDING PAGE EN 48 HORAS O ES GRATIS!", desc: "Te garantizamos la entrega ultra rápida de tu sitio web listo para vender bajo contrato.", image: "/images/demo/servicios2.avif" },
+      { tag: "PRODUCCIÓN MENSUAL", title: "¡15% DE DESCUENTO EN GESTIÓN DE ANUNCIOS!", desc: "Código: GROWTH15. Potencia tu captación con campañas optimizadas por profesionales.", image: "/images/demo/servicios3.avif" }
     ],
     categories: ["Todos", "Marketing", "Desarrollo", "Asesorías"],
     theme: {
@@ -178,88 +178,88 @@ const NICHES_CONFIG = {
 
 const INITIAL_PRODUCTS = [
   // 🏋️‍♂️ GYM (10)
-  { id: "g1", niche: "gym", name: "Mancuernas Hexagonales Cemento (Set 10kg)", price: 39.99, stars: 5, category: "Equipamiento", image: "/images/demo/gym.png" },
-  { id: "g2", niche: "gym", name: "Proteína de Suero Whey Gold Standard 2lb", price: 49.99, stars: 5, category: "Suplementos", image: "/images/demo/gym2.png" },
-  { id: "g3", niche: "gym", name: "Rueda de Abdominales Doble Rodamiento Pro", price: 19.99, stars: 4, category: "Accesorios", image: "/images/demo/gym3.png" },
-  { id: "g4", niche: "gym", name: "Barra Olímpica de Acero Cromado 20kg", price: 119.99, stars: 5, category: "Equipamiento", image: "/images/demo/gym.png" },
-  { id: "g5", niche: "gym", name: "Creatina Monohidratada Micronizada 300g", price: 29.99, stars: 5, category: "Suplementos", image: "/images/demo/gym2.png" },
-  { id: "g6", niche: "gym", name: "Banda Elásticas de Resistencia (Set de 5)", price: 14.99, stars: 4, category: "Accesorios", image: "/images/demo/gym3.png" },
-  { id: "g7", niche: "gym", name: "Banco de Pecho Ajustable Multiposición", price: 149.99, stars: 5, category: "Equipamiento", image: "/images/demo/gym.png" },
-  { id: "g8", niche: "gym", name: "Aminoácidos BCAA Polvo Sabor Frambuesa", price: 24.99, stars: 4, category: "Suplementos", image: "/images/demo/gym2.png" },
-  { id: "g9", niche: "gym", name: "Cinturón de Cuero de Levantamiento Pesas", price: 34.99, stars: 5, category: "Accesorios", image: "/images/demo/gym3.png" },
-  { id: "g10", niche: "gym", name: "Colchoneta de Yoga Fitness Antideslizante", price: 12.99, stars: 4, category: "Accesorios", image: "/images/demo/gym.png" },
+  { id: "g1", niche: "gym", name: "Mancuernas Hexagonales Cemento (Set 10kg)", price: 39.99, stars: 5, category: "Equipamiento", image: "/images/demo/gym.avif" },
+  { id: "g2", niche: "gym", name: "Proteína de Suero Whey Gold Standard 2lb", price: 49.99, stars: 5, category: "Suplementos", image: "/images/demo/gym2.avif" },
+  { id: "g3", niche: "gym", name: "Rueda de Abdominales Doble Rodamiento Pro", price: 19.99, stars: 4, category: "Accesorios", image: "/images/demo/gym3.avif" },
+  { id: "g4", niche: "gym", name: "Barra Olímpica de Acero Cromado 20kg", price: 119.99, stars: 5, category: "Equipamiento", image: "/images/demo/gym.avif" },
+  { id: "g5", niche: "gym", name: "Creatina Monohidratada Micronizada 300g", price: 29.99, stars: 5, category: "Suplementos", image: "/images/demo/gym2.avif" },
+  { id: "g6", niche: "gym", name: "Banda Elásticas de Resistencia (Set de 5)", price: 14.99, stars: 4, category: "Accesorios", image: "/images/demo/gym3.avif" },
+  { id: "g7", niche: "gym", name: "Banco de Pecho Ajustable Multiposición", price: 149.99, stars: 5, category: "Equipamiento", image: "/images/demo/gym.avif" },
+  { id: "g8", niche: "gym", name: "Aminoácidos BCAA Polvo Sabor Frambuesa", price: 24.99, stars: 4, category: "Suplementos", image: "/images/demo/gym2.avif" },
+  { id: "g9", niche: "gym", name: "Cinturón de Cuero de Levantamiento Pesas", price: 34.99, stars: 5, category: "Accesorios", image: "/images/demo/gym3.avif" },
+  { id: "g10", niche: "gym", name: "Colchoneta de Yoga Fitness Antideslizante", price: 12.99, stars: 4, category: "Accesorios", image: "/images/demo/gym.avif" },
 
   // 👕 MODA / ROPA (10)
-  { id: "r1", niche: "ropa", name: "Camisa de Lino Beige Corte Regular", price: 45.00, stars: 5, category: "Camisas", image: "/images/demo/ropa.png" },
-  { id: "r2", niche: "ropa", name: "Pantalón Chino Slim Fit Casual", price: 55.00, stars: 4, category: "Pantalones", image: "/images/demo/ropa2.png" },
-  { id: "r3", niche: "ropa", name: "Bufanda de Lana Cashmere Flecos", price: 25.00, stars: 5, category: "Accesorios", image: "/images/demo/ropa3.png" },
-  { id: "r4", niche: "ropa", name: "Camiseta Algodón Orgánico Pesado", price: 29.00, stars: 4, category: "Camisas", image: "/images/demo/ropa.png" },
-  { id: "r5", niche: "ropa", name: "Jeans Denim Rígido Azul Clásico", price: 65.00, stars: 5, category: "Pantalones", image: "/images/demo/ropa2.png" },
-  { id: "r6", niche: "ropa", name: "Cinturón de Cuero Café Hebilla Plata", price: 35.00, stars: 4, category: "Accesorios", image: "/images/demo/ropa3.png" },
-  { id: "r7", niche: "ropa", name: "Sobretodo Elegante Lana Paño Gris", price: 145.00, stars: 5, category: "Camisas", image: "/images/demo/ropa.png" },
-  { id: "r8", niche: "ropa", name: "Pantaloneta de Lino Verano Cordón", price: 38.00, stars: 4, category: "Pantalones", image: "/images/demo/ropa2.png" },
-  { id: "r9", niche: "ropa", name: "Gafas de Sol Estilo Retro Acetato", price: 42.00, stars: 5, category: "Accesorios", image: "/images/demo/ropa3.png" },
-  { id: "r10", niche: "ropa", name: "Camisa Oxford Clásica Azul Celeste", price: 49.00, stars: 4, category: "Camisas", image: "/images/demo/ropa.png" },
+  { id: "r1", niche: "ropa", name: "Camisa de Lino Beige Corte Regular", price: 45.00, stars: 5, category: "Camisas", image: "/images/demo/ropa.avif" },
+  { id: "r2", niche: "ropa", name: "Pantalón Chino Slim Fit Casual", price: 55.00, stars: 4, category: "Pantalones", image: "/images/demo/ropa2.avif" },
+  { id: "r3", niche: "ropa", name: "Bufanda de Lana Cashmere Flecos", price: 25.00, stars: 5, category: "Accesorios", image: "/images/demo/ropa3.avif" },
+  { id: "r4", niche: "ropa", name: "Camiseta Algodón Orgánico Pesado", price: 29.00, stars: 4, category: "Camisas", image: "/images/demo/ropa.avif" },
+  { id: "r5", niche: "ropa", name: "Jeans Denim Rígido Azul Clásico", price: 65.00, stars: 5, category: "Pantalones", image: "/images/demo/ropa2.avif" },
+  { id: "r6", niche: "ropa", name: "Cinturón de Cuero Café Hebilla Plata", price: 35.00, stars: 4, category: "Accesorios", image: "/images/demo/ropa3.avif" },
+  { id: "r7", niche: "ropa", name: "Sobretodo Elegante Lana Paño Gris", price: 145.00, stars: 5, category: "Camisas", image: "/images/demo/ropa.avif" },
+  { id: "r8", niche: "ropa", name: "Pantaloneta de Lino Verano Cordón", price: 38.00, stars: 4, category: "Pantalones", image: "/images/demo/ropa2.avif" },
+  { id: "r9", niche: "ropa", name: "Gafas de Sol Estilo Retro Acetato", price: 42.00, stars: 5, category: "Accesorios", image: "/images/demo/ropa3.avif" },
+  { id: "r10", niche: "ropa", name: "Camisa Oxford Clásica Azul Celeste", price: 49.00, stars: 4, category: "Camisas", image: "/images/demo/ropa.avif" },
 
   // 👟 CALZADO (10)
-  { id: "c1", niche: "calzado", name: "Tenis Running Pro Amortiguación Rojo", price: 129.99, stars: 5, category: "Deportivo", image: "/images/demo/calzado.png" },
-  { id: "c2", niche: "calzado", name: "Mocasines de Cuero Marrón Confort", price: 89.99, stars: 4, category: "Casual", image: "/images/demo/calzado2.png" },
-  { id: "c3", niche: "calzado", name: "Zapatos Oxford Formales de Vestir", price: 149.99, stars: 5, category: "Formal", image: "/images/demo/calzado3.png" },
-  { id: "c4", niche: "calzado", name: "Sneakers Urbanos Suela Goma Carbón", price: 99.99, stars: 4, category: "Casual", image: "/images/demo/calzado.png" },
-  { id: "c5", niche: "calzado", name: "Botas de Cuero Invierno Forro Lana", price: 139.99, stars: 5, category: "Casual", image: "/images/demo/calzado2.png" },
-  { id: "c6", niche: "calzado", name: "Zapatillas de Deporte Trail Antideslizantes", price: 119.99, stars: 5, category: "Deportivo", image: "/images/demo/calzado3.png" },
-  { id: "c7", niche: "calzado", name: "Sandalias de Cuero Premium Verano", price: 59.99, stars: 4, category: "Casual", image: "/images/demo/calzado.png" },
-  { id: "c8", niche: "calzado", name: "Zapatos de Vestir Charol Boda", price: 169.99, stars: 5, category: "Formal", image: "/images/demo/calzado2.png" },
-  { id: "c9", niche: "calzado", name: "Tenis Deportivos Malla Transpirable", price: 79.99, stars: 4, category: "Deportivo", image: "/images/demo/calzado3.png" },
-  { id: "c10", niche: "calzado", name: "Zapatos Derby Casuales de Nobuck", price: 109.99, stars: 4, category: "Casual", image: "/images/demo/calzado.png" },
+  { id: "c1", niche: "calzado", name: "Tenis Running Pro Amortiguación Rojo", price: 129.99, stars: 5, category: "Deportivo", image: "/images/demo/calzado.avif" },
+  { id: "c2", niche: "calzado", name: "Mocasines de Cuero Marrón Confort", price: 89.99, stars: 4, category: "Casual", image: "/images/demo/calzado2.avif" },
+  { id: "c3", niche: "calzado", name: "Zapatos Oxford Formales de Vestir", price: 149.99, stars: 5, category: "Formal", image: "/images/demo/calzado3.avif" },
+  { id: "c4", niche: "calzado", name: "Sneakers Urbanos Suela Goma Carbón", price: 99.99, stars: 4, category: "Casual", image: "/images/demo/calzado.avif" },
+  { id: "c5", niche: "calzado", name: "Botas de Cuero Invierno Forro Lana", price: 139.99, stars: 5, category: "Casual", image: "/images/demo/calzado2.avif" },
+  { id: "c6", niche: "calzado", name: "Zapatillas de Deporte Trail Antideslizantes", price: 119.99, stars: 5, category: "Deportivo", image: "/images/demo/calzado3.avif" },
+  { id: "c7", niche: "calzado", name: "Sandalias de Cuero Premium Verano", price: 59.99, stars: 4, category: "Casual", image: "/images/demo/calzado.avif" },
+  { id: "c8", niche: "calzado", name: "Zapatos de Vestir Charol Boda", price: 169.99, stars: 5, category: "Formal", image: "/images/demo/calzado2.avif" },
+  { id: "c9", niche: "calzado", name: "Tenis Deportivos Malla Transpirable", price: 79.99, stars: 4, category: "Deportivo", image: "/images/demo/calzado3.avif" },
+  { id: "c10", niche: "calzado", name: "Zapatos Derby Casuales de Nobuck", price: 109.99, stars: 4, category: "Casual", image: "/images/demo/calzado.avif" },
 
   // 🐶 MASCOTAS (10)
-  { id: "m1", niche: "mascotas", name: "Croquetas Naturales Súper Premium 15kg", price: 67.00, stars: 5, category: "Alimento", image: "/images/demo/mascotas.png" },
-  { id: "m2", niche: "mascotas", name: "Rascador de Tres Niveles Felpa Gatos", price: 45.00, stars: 4, category: "Juguetes", image: "/images/demo/mascotas2.png" },
-  { id: "m3", niche: "mascotas", name: "Champú Hipoalergénico Avena Orgánica", price: 15.50, stars: 5, category: "Higiene", image: "/images/demo/mascotas3.png" },
-  { id: "m4", niche: "mascotas", name: "Alimento Húmedo Filete Receta Pollo", price: 2.50, stars: 4, category: "Alimento", image: "/images/demo/mascotas.png" },
-  { id: "m5", niche: "mascotas", name: "Juguete Mordedor de Goma Alta Tracción", price: 9.99, stars: 5, category: "Juguetes", image: "/images/demo/mascotas2.png" },
-  { id: "m6", niche: "mascotas", name: "Cepillo Quita Pelo Profesional Mascotas", price: 12.50, stars: 4, category: "Higiene", image: "/images/demo/mascotas3.png" },
-  { id: "m7", niche: "mascotas", name: "Galletas Naturales Sabor Pato Avena", price: 7.99, stars: 5, category: "Alimento", image: "/images/demo/mascotas.png" },
-  { id: "m8", niche: "mascotas", name: "Pelotas de Tenis Interactivas Set (3)", price: 6.50, stars: 4, category: "Juguetes", image: "/images/demo/mascotas2.png" },
-  { id: "m9", niche: "mascotas", name: "Cortauñas Ergonómico Navaja Acero", price: 11.00, stars: 4, category: "Higiene", image: "/images/demo/mascotas3.png" },
-  { id: "m10", niche: "mascotas", name: "Arnés de Pecho Seguridad Reflectivo", price: 24.99, stars: 5, category: "Juguetes", image: "/images/demo/mascotas.png" },
+  { id: "m1", niche: "mascotas", name: "Croquetas Naturales Súper Premium 15kg", price: 67.00, stars: 5, category: "Alimento", image: "/images/demo/mascotas.avif" },
+  { id: "m2", niche: "mascotas", name: "Rascador de Tres Niveles Felpa Gatos", price: 45.00, stars: 4, category: "Juguetes", image: "/images/demo/mascotas2.avif" },
+  { id: "m3", niche: "mascotas", name: "Champú Hipoalergénico Avena Orgánica", price: 15.50, stars: 5, category: "Higiene", image: "/images/demo/mascotas3.avif" },
+  { id: "m4", niche: "mascotas", name: "Alimento Húmedo Filete Receta Pollo", price: 2.50, stars: 4, category: "Alimento", image: "/images/demo/mascotas.avif" },
+  { id: "m5", niche: "mascotas", name: "Juguete Mordedor de Goma Alta Tracción", price: 9.99, stars: 5, category: "Juguetes", image: "/images/demo/mascotas2.avif" },
+  { id: "m6", niche: "mascotas", name: "Cepillo Quita Pelo Profesional Mascotas", price: 12.50, stars: 4, category: "Higiene", image: "/images/demo/mascotas3.avif" },
+  { id: "m7", niche: "mascotas", name: "Galletas Naturales Sabor Pato Avena", price: 7.99, stars: 5, category: "Alimento", image: "/images/demo/mascotas.avif" },
+  { id: "m8", niche: "mascotas", name: "Pelotas de Tenis Interactivas Set (3)", price: 6.50, stars: 4, category: "Juguetes", image: "/images/demo/mascotas2.avif" },
+  { id: "m9", niche: "mascotas", name: "Cortauñas Ergonómico Navaja Acero", price: 11.00, stars: 4, category: "Higiene", image: "/images/demo/mascotas3.avif" },
+  { id: "m10", niche: "mascotas", name: "Arnés de Pecho Seguridad Reflectivo", price: 24.99, stars: 5, category: "Juguetes", image: "/images/demo/mascotas.avif" },
 
   // 🦷 ODONTOLOGÍA (10)
-  { id: "o1", niche: "odontologia", name: "Kit de Alineadores Invisibles Avanzados", price: 599.00, stars: 5, category: "Ortodoncia", image: "/images/demo/odontologia.png" },
-  { id: "o2", niche: "odontologia", name: "Kit de Blanqueamiento Dental Led Pro", price: 79.99, stars: 4, category: "Estética", image: "/images/demo/odontologia2.png" },
-  { id: "o3", niche: "odontologia", name: "Cepillo de Dientes Eléctrico Sónico 3D", price: 45.00, stars: 5, category: "Higiene", image: "/images/demo/odontologia3.png" },
-  { id: "o4", niche: "odontologia", name: "Consulta Diagnóstica e Integral Odontología", price: 30.00, stars: 5, category: "Ortodoncia", image: "/images/demo/odontologia.png" },
-  { id: "o5", niche: "odontologia", name: "Servicio de Limpieza Dental Láser Premium", price: 89.00, stars: 5, category: "Estética", image: "/images/demo/odontologia2.png" },
-  { id: "o6", niche: "odontologia", name: "Seda Dental Orgánica Libre Plástico (x3)", price: 9.99, stars: 4, category: "Higiene", image: "/images/demo/odontologia3.png" },
-  { id: "o7", niche: "odontologia", name: "Bracket de Zafiro Estético Sede Norte", price: 350.00, stars: 5, category: "Ortodoncia", image: "/images/demo/odontologia.png" },
-  { id: "o8", niche: "odontologia", name: "Carilla de Resina Estética (Precio Pieza)", price: 180.00, stars: 5, category: "Estética", image: "/images/demo/odontologia2.png" },
-  { id: "o9", niche: "odontologia", name: "Pasta Dental Remineralizante Hidroxiapatita", price: 12.50, stars: 4, category: "Higiene", image: "/images/demo/odontologia3.png" },
-  { id: "o10", niche: "odontologia", name: "Protector Bucal Deportivo a Medida", price: 25.00, stars: 4, category: "Ortodoncia", image: "/images/demo/odontologia.png" },
+  { id: "o1", niche: "odontologia", name: "Kit de Alineadores Invisibles Avanzados", price: 599.00, stars: 5, category: "Ortodoncia", image: "/images/demo/odontologia.avif" },
+  { id: "o2", niche: "odontologia", name: "Kit de Blanqueamiento Dental Led Pro", price: 79.99, stars: 4, category: "Estética", image: "/images/demo/odontologia2.avif" },
+  { id: "o3", niche: "odontologia", name: "Cepillo de Dientes Eléctrico Sónico 3D", price: 45.00, stars: 5, category: "Higiene", image: "/images/demo/odontologia3.avif" },
+  { id: "o4", niche: "odontologia", name: "Consulta Diagnóstica e Integral Odontología", price: 30.00, stars: 5, category: "Ortodoncia", image: "/images/demo/odontologia.avif" },
+  { id: "o5", niche: "odontologia", name: "Servicio de Limpieza Dental Láser Premium", price: 89.00, stars: 5, category: "Estética", image: "/images/demo/odontologia2.avif" },
+  { id: "o6", niche: "odontologia", name: "Seda Dental Orgánica Libre Plástico (x3)", price: 9.99, stars: 4, category: "Higiene", image: "/images/demo/odontologia3.avif" },
+  { id: "o7", niche: "odontologia", name: "Bracket de Zafiro Estético Sede Norte", price: 350.00, stars: 5, category: "Ortodoncia", image: "/images/demo/odontologia.avif" },
+  { id: "o8", niche: "odontologia", name: "Carilla de Resina Estética (Precio Pieza)", price: 180.00, stars: 5, category: "Estética", image: "/images/demo/odontologia2.avif" },
+  { id: "o9", niche: "odontologia", name: "Pasta Dental Remineralizante Hidroxiapatita", price: 12.50, stars: 4, category: "Higiene", image: "/images/demo/odontologia3.avif" },
+  { id: "o10", niche: "odontologia", name: "Protector Bucal Deportivo a Medida", price: 25.00, stars: 4, category: "Ortodoncia", image: "/images/demo/odontologia.avif" },
 
   // ⌚ TECNOLOGÍA (10)
-  { id: "t1", niche: "tecnologia", name: "Smartwatch Active Titanium Pro GPS", price: 299.99, stars: 5, category: "Smartwatches", image: "/images/demo/tecnologia.png" },
-  { id: "t2", niche: "tecnologia", name: "Auriculares Inalámbricos ANC Hifi", price: 129.99, stars: 5, category: "Auriculares", image: "/images/demo/tecnologia2.png" },
-  { id: "t3", niche: "tecnologia", name: "Cargador Inalámbrico Rápido QI 3 en 1", price: 39.99, stars: 4, category: "Cargadores", image: "/images/demo/tecnologia3.png" },
-  { id: "t4", niche: "tecnologia", name: "Smartwatch Active Sport Edition 44mm", price: 189.99, stars: 4, category: "Smartwatches", image: "/images/demo/tecnologia.png" },
-  { id: "t5", niche: "tecnologia", name: "Auriculares Deportivos In-Ear Bluetooth", price: 79.99, stars: 4, category: "Auriculares", image: "/images/demo/tecnologia2.png" },
-  { id: "t6", niche: "tecnologia", name: "Cargador Rápido GaN Ultra compacto 65W", price: 29.99, stars: 5, category: "Cargadores", image: "/images/demo/tecnologia3.png" },
-  { id: "t7", niche: "tecnologia", name: "Correa Smartwatch Cuero Natural Lujo", price: 24.99, stars: 4, category: "Smartwatches", image: "/images/demo/tecnologia.png" },
-  { id: "t8", niche: "tecnologia", name: "Audífonos Over-Ear Cable Monitoreo", price: 149.99, stars: 5, category: "Auriculares", image: "/images/demo/tecnologia2.png" },
-  { id: "t9", niche: "tecnologia", name: "Batería Portátil Magnética QI 10.000mAh", price: 45.00, stars: 4, category: "Cargadores", image: "/images/demo/tecnologia3.png" },
-  { id: "t10", niche: "tecnologia", name: "Cable USB-C a USB-C Trenzado Reforzado", price: 12.99, stars: 4, category: "Cargadores", image: "/images/demo/tecnologia.png" },
+  { id: "t1", niche: "tecnologia", name: "Smartwatch Active Titanium Pro GPS", price: 299.99, stars: 5, category: "Smartwatches", image: "/images/demo/tecnologia.avif" },
+  { id: "t2", niche: "tecnologia", name: "Auriculares Inalámbricos ANC Hifi", price: 129.99, stars: 5, category: "Auriculares", image: "/images/demo/tecnologia2.avif" },
+  { id: "t3", niche: "tecnologia", name: "Cargador Inalámbrico Rápido QI 3 en 1", price: 39.99, stars: 4, category: "Cargadores", image: "/images/demo/tecnologia3.avif" },
+  { id: "t4", niche: "tecnologia", name: "Smartwatch Active Sport Edition 44mm", price: 189.99, stars: 4, category: "Smartwatches", image: "/images/demo/tecnologia.avif" },
+  { id: "t5", niche: "tecnologia", name: "Auriculares Deportivos In-Ear Bluetooth", price: 79.99, stars: 4, category: "Auriculares", image: "/images/demo/tecnologia2.avif" },
+  { id: "t6", niche: "tecnologia", name: "Cargador Rápido GaN Ultra compacto 65W", price: 29.99, stars: 5, category: "Cargadores", image: "/images/demo/tecnologia3.avif" },
+  { id: "t7", niche: "tecnologia", name: "Correa Smartwatch Cuero Natural Lujo", price: 24.99, stars: 4, category: "Smartwatches", image: "/images/demo/tecnologia.avif" },
+  { id: "t8", niche: "tecnologia", name: "Audífonos Over-Ear Cable Monitoreo", price: 149.99, stars: 5, category: "Auriculares", image: "/images/demo/tecnologia2.avif" },
+  { id: "t9", niche: "tecnologia", name: "Batería Portátil Magnética QI 10.000mAh", price: 45.00, stars: 4, category: "Cargadores", image: "/images/demo/tecnologia3.avif" },
+  { id: "t10", niche: "tecnologia", name: "Cable USB-C a USB-C Trenzado Reforzado", price: 12.99, stars: 4, category: "Cargadores", image: "/images/demo/tecnologia.avif" },
 
   // 💼 SERVICIOS (10)
-  { id: "s1", niche: "servicios", name: "Plan de Gestión Mensual Redes Sociales", price: 199.00, stars: 5, category: "Marketing", image: "/images/demo/servicios.png" },
-  { id: "s2", niche: "servicios", name: "Desarrollo Landing Page de Ventas Express", price: 350.00, stars: 5, category: "Desarrollo", image: "/images/demo/servicios2.png" },
-  { id: "s3", niche: "servicios", name: "Auditoría SEO Completa y Reporte Técnico", price: 80.00, stars: 4, category: "Asesorías", image: "/images/demo/servicios3.png" },
-  { id: "s4", niche: "servicios", name: "Campaña Conversión Anuncios Meta Ads", price: 299.00, stars: 5, category: "Marketing", image: "/images/demo/servicios.png" },
-  { id: "s5", niche: "servicios", name: "Diseño Web E-commerce Shopify Completo", price: 750.00, stars: 5, category: "Desarrollo", image: "/images/demo/servicios2.png" },
-  { id: "s6", niche: "servicios", name: "Asesoría Estratégica Modelamiento Negocios", price: 120.00, stars: 4, category: "Asesorías", image: "/images/demo/servicios3.png" },
-  { id: "s7", niche: "servicios", name: "Redacción Profesional Copywriting 5 Páginas", price: 149.00, stars: 5, category: "Marketing", image: "/images/demo/servicios.png" },
-  { id: "s8", niche: "servicios", name: "Mantenimiento Técnico Mensual WordPress/Next", price: 75.00, stars: 4, category: "Desarrollo", image: "/images/demo/servicios2.png" },
-  { id: "s9", niche: "servicios", name: "Optimización de Velocidad y Carga Web", price: 99.00, stars: 5, category: "Desarrollo", image: "/images/demo/servicios3.png" },
-  { id: "s10", niche: "servicios", name: "Diagnóstico Inicial de Prospección Digital", price: 45.00, stars: 4, category: "Asesorías", image: "/images/demo/servicios.png" }
+  { id: "s1", niche: "servicios", name: "Plan de Gestión Mensual Redes Sociales", price: 199.00, stars: 5, category: "Marketing", image: "/images/demo/servicios.avif" },
+  { id: "s2", niche: "servicios", name: "Desarrollo Landing Page de Ventas Express", price: 350.00, stars: 5, category: "Desarrollo", image: "/images/demo/servicios2.avif" },
+  { id: "s3", niche: "servicios", name: "Auditoría SEO Completa y Reporte Técnico", price: 80.00, stars: 4, category: "Asesorías", image: "/images/demo/servicios3.avif" },
+  { id: "s4", niche: "servicios", name: "Campaña Conversión Anuncios Meta Ads", price: 299.00, stars: 5, category: "Marketing", image: "/images/demo/servicios.avif" },
+  { id: "s5", niche: "servicios", name: "Diseño Web E-commerce Shopify Completo", price: 750.00, stars: 5, category: "Desarrollo", image: "/images/demo/servicios2.avif" },
+  { id: "s6", niche: "servicios", name: "Asesoría Estratégica Modelamiento Negocios", price: 120.00, stars: 4, category: "Asesorías", image: "/images/demo/servicios3.avif" },
+  { id: "s7", niche: "servicios", name: "Redacción Profesional Copywriting 5 Páginas", price: 149.00, stars: 5, category: "Marketing", image: "/images/demo/servicios.avif" },
+  { id: "s8", niche: "servicios", name: "Mantenimiento Técnico Mensual WordPress/Next", price: 75.00, stars: 4, category: "Desarrollo", image: "/images/demo/servicios2.avif" },
+  { id: "s9", niche: "servicios", name: "Optimización de Velocidad y Carga Web", price: 99.00, stars: 5, category: "Desarrollo", image: "/images/demo/servicios3.avif" },
+  { id: "s10", niche: "servicios", name: "Diagnóstico Inicial de Prospección Digital", price: 45.00, stars: 4, category: "Asesorías", image: "/images/demo/servicios.avif" }
 ];
 
 export default function DemoMarketplacePage() {

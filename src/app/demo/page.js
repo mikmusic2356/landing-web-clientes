@@ -19,9 +19,9 @@ const NICHES_DATA = {
       "Entrenadores certificados listos para guiarte."
     ],
     images: [
-      "/images/demo/gym.png",
-      "/images/demo/gym2.png",
-      "/images/demo/gym3.png"
+      "/images/demo/gym.avif",
+      "/images/demo/gym2.avif",
+      "/images/demo/gym3.avif"
     ],
     priceBase: 49.99,
     properties: [
@@ -102,9 +102,9 @@ const NICHES_DATA = {
       "Diseños originales con unidades ultra limitadas."
     ],
     images: [
-      "/images/demo/ropa.png",
-      "/images/demo/ropa2.png",
-      "/images/demo/ropa3.png"
+      "/images/demo/ropa.avif",
+      "/images/demo/ropa2.avif",
+      "/images/demo/ropa3.avif"
     ],
     priceBase: 89.90,
     properties: [
@@ -187,9 +187,9 @@ const NICHES_DATA = {
       "Materiales transpirables de calidad espacial."
     ],
     images: [
-      "/images/demo/calzado.png",
-      "/images/demo/calzado2.png",
-      "/images/demo/calzado3.png"
+      "/images/demo/calzado.avif",
+      "/images/demo/calzado2.avif",
+      "/images/demo/calzado3.avif"
     ],
     priceBase: 129.99,
     properties: [
@@ -272,9 +272,9 @@ const NICHES_DATA = {
       "Despacho exprés a domicilio en 2 horas."
     ],
     images: [
-      "/images/demo/mascotas.png",
-      "/images/demo/mascotas2.png",
-      "/images/demo/mascotas3.png"
+      "/images/demo/mascotas.avif",
+      "/images/demo/mascotas2.avif",
+      "/images/demo/mascotas3.avif"
     ],
     priceBase: 34.50,
     properties: [
@@ -356,9 +356,9 @@ const NICHES_DATA = {
       "Urgencias y citas prioritarias el mismo día."
     ],
     images: [
-      "/images/demo/odontologia.png",
-      "/images/demo/odontologia2.png",
-      "/images/demo/odontologia3.png"
+      "/images/demo/odontologia.avif",
+      "/images/demo/odontologia2.avif",
+      "/images/demo/odontologia3.avif"
     ],
     priceBase: 120.00,
     properties: [
@@ -439,9 +439,9 @@ const NICHES_DATA = {
       "Garantía oficial y soporte técnico premium de 1 año."
     ],
     images: [
-      "/images/demo/tecnologia.png",
-      "/images/demo/tecnologia2.png",
-      "/images/demo/tecnologia3.png"
+      "/images/demo/tecnologia.avif",
+      "/images/demo/tecnologia2.avif",
+      "/images/demo/tecnologia3.avif"
     ],
     priceBase: 249.99,
     properties: [
@@ -522,9 +522,9 @@ const NICHES_DATA = {
       "Garantía por contrato: si no creces, no pagas."
     ],
     images: [
-      "/images/demo/servicios.png",
-      "/images/demo/servicios2.png",
-      "/images/demo/servicios3.png"
+      "/images/demo/servicios.avif",
+      "/images/demo/servicios2.avif",
+      "/images/demo/servicios3.avif"
     ],
     priceBase: 399.00,
     properties: [

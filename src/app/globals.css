@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
-
 :root {
   /* Color Palette - Premium Green & Gold */
   --primary: #00a859;
@@ -24,10 +22,7 @@
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
-  
-  /* Fonts */
-  --font-title: 'Outfit', sans-serif;
-  --font-body: 'Inter', sans-serif;
+
   
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);

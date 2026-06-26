@@ -1,5 +1,21 @@
+import { Outfit, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-title",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
 
 // Configuración de herramientas de marketing (Meta Pixel y Microsoft Clarity)
 const CONFIG = {
@@ -58,7 +74,7 @@ export default function RootLayout({ children }) {
           </Script>
         )}
       </head>
-      <body>{children}</body>
+      <body className={`${outfit.variable} ${inter.variable}`}>{children}</body>
     </html>
   );
 }

@@ -77,9 +77,12 @@
 
 .navLinks {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   list-style: none;
   align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0 20px;
 }
 
 .navLinks a {
@@ -1437,7 +1440,7 @@
   z-index: 999;
 }
 
-.mobileActive .mobileMenu {
+.mobileMenu.mobileActive {
   display: block;
 }
 
@@ -1462,6 +1465,85 @@
   justify-content: center;
 }
 
+/* Bottom Demo Section */
+.bottomDemoSection {
+  padding: 60px 0;
+  background: var(--bg-dark-offset);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.demoCtaWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(0, 168, 89, 0.2);
+  padding: 40px;
+  border-radius: var(--border-radius-lg);
+  gap: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.demoCtaContent {
+  flex: 1;
+}
+
+.demoCtaTitle {
+  font-size: 26px;
+  color: var(--text-light);
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.demoCtaDesc {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 600px;
+}
+
+.demoBtnGroup {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.demoCtaBtn {
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+  text-align: center;
+}
+
+.demoLandingBtn {
+  background: var(--primary);
+  color: white;
+  box-shadow: var(--shadow-green);
+}
+
+.demoLandingBtn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.demoMarketplaceBtn {
+  background: transparent;
+  color: var(--text-light);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.demoMarketplaceBtn:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1024px) {
   .heroTitle {
@@ -1475,6 +1557,19 @@
 @media (max-width: 768px) {
   .navLinks, .nav .headerBtn {
     display: none;
+  }
+  .demoCtaWrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .demoBtnGroup {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .demoCtaBtn {
+    width: 100%;
   }
   .menuToggle {
     display: flex;

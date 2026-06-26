@@ -719,6 +719,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sección de Demos Interactivas al Final */}
+      <section className={styles.bottomDemoSection}>
+        <div className={styles.container}>
+          <div className={styles.demoCtaWrapper}>
+            <div className={styles.demoCtaContent}>
+              <h3 className={styles.demoCtaTitle}>¿Quieres ver el sistema en acción? 🚀</h3>
+              <p className={styles.demoCtaDesc}>
+                Hemos creado dos simuladores completamente interactivos para que experimentes cómo funciona el flujo de ventas directo a WhatsApp según tu modelo de negocio.
+              </p>
+            </div>
+            <div className={styles.demoBtnGroup}>
+              <Link href="/demo" className={`${styles.demoCtaBtn} ${styles.demoLandingBtn}`}>
+                Ver Demo Landing Page
+              </Link>
+              <Link href="/demomarketplace" className={`${styles.demoCtaBtn} ${styles.demoMarketplaceBtn}`}>
+                Ver Demo Tienda Completa
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={`${styles.container} ${styles.footerGrid}`}>

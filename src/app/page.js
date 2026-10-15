@@ -10,7 +10,7 @@ const CONFIG = {
   whatsappMessage: 'Estoy interesado en tus servicios como diseñador web, ¿podemos hablar?',
   brandName: 'WEB CLIENTES',
   brandSlogan: 'Tu negocio en internet',
-  priceCOP: '499.900',
+  priceCOP: '800.000',
 };
 
 // Enlace directo a WhatsApp
@@ -229,7 +229,7 @@ export default function Home() {
   // Preguntas frecuentes
   const faqs = [
     {
-      q: '¿Qué incluye la página por $499.900 COP?',
+      q: '¿Qué incluye la página por $800.000 COP?',
       a: 'Incluye diseño 100% responsive optimizado para celulares, integración directa de botones de compra hacia tu WhatsApp, hosting y subdominio incluidos por el primer año, galería de tus productos o servicios, y optimización de velocidad.'
     },
     {
@@ -264,6 +264,7 @@ export default function Home() {
           </div>
 
           <ul className={styles.navLinks}>
+            <li><Link href="/onboarding" style={{ color: '#00a859', fontWeight: 'bold' }}>🎯 Onboarding & Agendar</Link></li>
             <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#ejemplos">Ejemplos</a></li>
             <li><a href="#como-funciona">Cómo funciona</a></li>
@@ -271,12 +272,9 @@ export default function Home() {
             <li><a href="#preguntas">Preguntas Frecuentes</a></li>
           </ul>
 
-          <a href={getWhatsappLink()} className={`${styles.headerBtn} ${styles.pulseButton}`}>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.93a7.904 7.904 0 0 0 1.08 3.971L0 16l4.143-1.086A7.9 7.9 0 0 0 7.993 16c4.367 0 7.926-3.558 7.93-7.93A7.897 7.897 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.194-.59-1.378-.658-.185-.067-.32-.103-.454.101-.135.203-.52.659-.637.793-.117.135-.235.151-.438.05-2.007-.997-3.213-2.749-3.713-3.621-.13-.226-.014-.349.1-.462.101-.102.203-.236.304-.354.1-.117.135-.198.203-.33.067-.132.033-.248-.017-.35-.05-.101-.454-1.093-.622-1.498-.164-.395-.325-.341-.454-.347-.117-.006-.252-.007-.387-.007-.135 0-.356.05-.542.253-.186.203-.709.693-.709 1.69 0 1 .726 1.967.828 2.102.102.134 1.43 2.183 3.465 3.063.483.21.86.335 1.154.429.485.154.927.132 1.277.08.39-.058 1.194-.488 1.362-.958.167-.47.167-.872.117-.957-.05-.084-.185-.135-.388-.236z"/>
-            </svg>
-            Quiero más clientes
-          </a>
+          <Link href="/onboarding" className={`${styles.headerBtn} ${styles.pulseButton}`}>
+            Agendar Reunión Meet
+          </Link>
 
           <div className={styles.menuToggle} onClick={toggleMenu}>
             <span></span>
@@ -334,13 +332,16 @@ export default function Home() {
             </div>
 
             <div className={styles.ctaContainer}>
-              <a href={getWhatsappLink()} className={`${styles.btnPrimary} ${styles.pulseButton}`}>
-                <svg width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+              <Link href="/onboarding" className={`${styles.btnPrimary} ${styles.pulseButton}`}>
+                🎯 AGENDAR REUNIÓN GRATIS (MEET)
+              </Link>
+              <a href={getWhatsappLink()} className={styles.btnSecondary} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 20px', borderRadius: '12px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff', fontWeight: 600 }}>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.93a7.904 7.904 0 0 0 1.08 3.971L0 16l4.143-1.086A7.9 7.9 0 0 0 7.993 16c4.367 0 7.926-3.558 7.93-7.93A7.897 7.897 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.194-.59-1.378-.658-.185-.067-.32-.103-.454.101-.135.203-.52.659-.637.793-.117.135-.235.151-.438.05-2.007-.997-3.213-2.749-3.713-3.621-.13-.226-.014-.349.1-.462.101-.102.203-.236.304-.354.1-.117.135-.198.203-.33.067-.132.033-.248-.017-.35-.05-.101-.454-1.093-.622-1.498-.164-.395-.325-.341-.454-.347-.117-.006-.252-.007-.387-.007-.135 0-.356.05-.542.253-.186.203-.709.693-.709 1.69 0 1 .726 1.967.828 2.102.102.134 1.43 2.183 3.465 3.063.483.21.86.335 1.154.429.485.154.927.132 1.277.08.39-.058 1.194-.488 1.362-.958.167-.47.167-.872.117-.957-.05-.084-.185-.135-.388-.236z"/>
                 </svg>
-                QUIERO MÁS CLIENTES
+                O Chatear Directo
               </a>
-              <span className={styles.ctaSubtext}> Te asesoramos gratis por WhatsApp 📲 </span>
+              <span className={styles.ctaSubtext}> Onboarding interactivo + Agendamiento automático 📅 </span>
             </div>
           </div>
 

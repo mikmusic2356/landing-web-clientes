@@ -1,0 +1,564 @@
+.container {
+  min-height: 100vh;
+  background-color: #f5fbf8;
+  color: #1a202c;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  font-family: inherit;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(0, 168, 89, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 40%);
+}
+
+.magicAura {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(0, 168, 89, 0.12) 0%, rgba(52, 211, 153, 0.05) 50%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.5s ease;
+}
+
+.magicAuraActive {
+  animation: pulseGlow 1.2s ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.2; }
+  50% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.8; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.3; }
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.25rem 4rem;
+  max-width: 680px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.progressHeader {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  background: #e2ede8;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #00a859 0%, #10b981 50%, #34d399 100%);
+  border-radius: 9999px;
+  transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 0 14px rgba(0, 168, 89, 0.4);
+}
+
+.stepIndicator {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4b6358;
+}
+
+.card {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid #e1efe8;
+  border-radius: 28px;
+  padding: 2.5rem 2.2rem;
+  box-shadow: 0 20px 45px -10px rgba(0, 80, 40, 0.08), 0 8px 16px -6px rgba(0, 0, 0, 0.03);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de destello mágico de borde */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #00a859, #34d399, #f59e0b, #00a859);
+  background-size: 300% 100%;
+  animation: shineBorder 4s linear infinite;
+}
+
+@keyframes shineBorder {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+.cardAnimateIn {
+  animation: cardPopIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes cardPopIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.cardFlashEffect {
+  animation: magicFlash 0.5s ease-out;
+}
+
+@keyframes magicFlash {
+  0% { box-shadow: 0 0 0 0 rgba(0, 168, 89, 0.6), 0 20px 45px rgba(0, 80, 40, 0.1); }
+  50% { box-shadow: 0 0 40px 10px rgba(0, 168, 89, 0.35), 0 20px 50px rgba(0, 80, 40, 0.15); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 168, 89, 0), 0 20px 45px rgba(0, 80, 40, 0.08); }
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #00a859;
+  background: rgba(0, 168, 89, 0.09);
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
+}
+
+.questionTitle {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #0f291e;
+  margin-bottom: 0.5rem;
+}
+
+.questionSubtitle {
+  font-size: 0.95rem;
+  color: #627d72;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+}
+
+.optionsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.optionButton {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: 18px;
+  background: #f8fcfa;
+  border: 2px solid #e1eee7;
+  color: #1e293b;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.optionButton:hover {
+  background: #ffffff;
+  border-color: #00a859;
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 168, 89, 0.12);
+}
+
+.optionSelected {
+  background: linear-gradient(135deg, #e8f9f0 0%, #f0faf5 100%) !important;
+  border-color: #00a859 !important;
+  color: #005a30 !important;
+  box-shadow: 0 10px 25px rgba(0, 168, 89, 0.16) !important;
+  transform: scale(1.015);
+}
+
+.optionSelected::after {
+  content: "✨";
+  position: absolute;
+  right: 1.25rem;
+  font-size: 1.2rem;
+  animation: sparkle 1s ease-in-out infinite alternate;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(0.9) rotate(0deg); opacity: 0.8; }
+  100% { transform: scale(1.2) rotate(15deg); opacity: 1; }
+}
+
+.optionRadio {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #cbdcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  background: #ffffff;
+}
+
+.optionRadioActive {
+  border-color: #00a859;
+  background: #00a859;
+}
+
+.optionRadioInner {
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.btnSecondary {
+  padding: 0.85rem 1.4rem;
+  background: #f1f7f4;
+  color: #4b6358;
+  border: 1.5px solid #d8e8e0;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btnSecondary:hover {
+  background: #e2ede8;
+  color: #173426;
+}
+
+.btnPrimary {
+  padding: 0.95rem 2rem;
+  background: linear-gradient(135deg, #00a859 0%, #008f39 100%);
+  color: #ffffff;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 168, 89, 0.35);
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: none;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #02be65 0%, #00a859 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(0, 168, 89, 0.45);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Scheduler & Form Section */
+.schedulerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.scheduleHeader {
+  border-bottom: 1.5px solid #e7f2ed;
+  padding-bottom: 1.25rem;
+}
+
+.scheduleHeader h2 {
+  font-size: 1.7rem;
+  color: #0f291e;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.meetBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e8f0fe;
+  border: 1px solid #c2d7fc;
+  color: #1a73e8;
+  padding: 0.4rem 0.85rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.datePickerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.dateCard {
+  padding: 0.9rem 0.5rem;
+  border-radius: 16px;
+  background: #f8fcfa;
+  border: 2px solid #e1eee7;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dateCard:hover {
+  background: #ffffff;
+  border-color: #00a859;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 168, 89, 0.1);
+}
+
+.dateCardSelected {
+  background: #e8f9f0 !important;
+  border-color: #00a859 !important;
+  color: #005a30 !important;
+  box-shadow: 0 8px 20px rgba(0, 168, 89, 0.2);
+  transform: scale(1.03);
+}
+
+.dateDayName {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  color: #627d72;
+  font-weight: 700;
+}
+
+.dateDayNum {
+  font-size: 1.45rem;
+  font-weight: 800;
+  margin: 0.2rem 0;
+  color: #0f291e;
+}
+
+.dateMonthName {
+  font-size: 0.78rem;
+  color: #627d72;
+  font-weight: 600;
+}
+
+.timeSlotsSection {
+  margin-top: 0.5rem;
+}
+
+.slotsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  gap: 0.65rem;
+  margin-top: 0.75rem;
+}
+
+.slotButton {
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  border-radius: 12px;
+  background: #f8fcfa;
+  border: 1.5px solid #e1eee7;
+  color: #1e293b;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.slotButton:hover:not(:disabled) {
+  border-color: #00a859;
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 168, 89, 0.15);
+}
+
+.slotSelected {
+  background: #00a859 !important;
+  border-color: #00a859 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(0, 168, 89, 0.35);
+  transform: scale(1.03);
+}
+
+.slotDisabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  background: #f1f5f3;
+}
+
+.formSection {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1.5px solid #e7f2ed;
+}
+
+.formGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-top: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formGroup label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1f3d2f;
+}
+
+.formInput {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 2px solid #dbeae2;
+  color: #0f291e;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.formInput:focus {
+  border-color: #00a859;
+  box-shadow: 0 0 0 4px rgba(0, 168, 89, 0.15);
+}
+
+.summaryBox {
+  background: linear-gradient(135deg, #eaf8f1 0%, #f4fbf7 100%);
+  border: 1.5px solid #c2e9d5;
+  border-radius: 16px;
+  padding: 1.15rem 1.3rem;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #1a3c2c;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.35rem 0;
+}
+
+.confirmBtn {
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.confirmBtn:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.55);
+  filter: brightness(1.06);
+}
+
+.confirmBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.successCard {
+  text-align: center;
+  padding: 3.5rem 2rem;
+}
+
+.successIcon {
+  width: 80px;
+  height: 80px;
+  background: #e8f9f0;
+  border: 3px solid #00a859;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2.5rem;
+  color: #00a859;
+  box-shadow: 0 8px 25px rgba(0, 168, 89, 0.25);
+  animation: popSuccess 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popSuccess {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 640px) {
+  .mainContent {
+    padding: 1.5rem 1rem 3rem;
+  }
+  .card {
+    padding: 1.8rem 1.25rem;
+    border-radius: 22px;
+  }
+  .questionTitle {
+    font-size: 1.35rem;
+  }
+  .optionButton {
+    padding: 0.95rem 1.1rem;
+    font-size: 0.95rem;
+  }
+  .datePickerGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

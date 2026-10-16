@@ -201,11 +201,32 @@ export default function OnboardingPage() {
   }, [selectedDate]);
 
   const handleSelectOption = (questionObj, option) => {
-    // Guardar respuesta con el título de la pregunta
+    // Si ya está en transición, evitar clics dobles rápidos
+    if (isTransitioning) return;
+
+    // 1. Guardar respuesta de inmediato
     setAnswers((prev) => ({
       ...prev,
       [questionObj.title]: option,
     }));
+
+    // 2. Chispas y transición mágica
+    triggerMagicSparkles();
+    setIsFlashing(true);
+    setIsTransitioning(true);
+
+    // 3. Pasar automáticamente a la siguiente pregunta tras breve feedback visual (280ms)
+    setTimeout(() => {
+      setIsFlashing(false);
+      setCurrentStep((prevStep) => {
+        if (prevStep < QUESTIONS.length - 1) {
+          return prevStep + 1;
+        } else {
+          return QUESTIONS.length;
+        }
+      });
+      setIsTransitioning(false);
+    }, 280);
   };
 
   const handleNext = () => {
@@ -394,28 +415,17 @@ ${respSummary}
               })}
             </div>
 
-            <div className={styles.buttonRow}>
-              {currentStep > 0 ? (
+            {currentStep > 0 && (
+              <div className={styles.buttonRow}>
                 <button
                   type="button"
                   onClick={handleBack}
                   className={styles.btnSecondary}
                 >
-                  ← Anterior
+                  ← Pregunta anterior
                 </button>
-              ) : <div />}
-
-              <button
-                type="button"
-                onClick={handleNext}
-                disabled={!answers[currentQ.title] || isTransitioning}
-                className={styles.btnPrimary}
-              >
-                {currentStep === QUESTIONS.length - 1
-                  ? "Agendar mi Reunión 🎉"
-                  : "Siguiente ✨"}
-              </button>
-            </div>
+              </div>
+            )}
           </div>
         )}
 
@@ -426,7 +436,7 @@ ${respSummary}
               <div className={styles.scheduleHeader}>
                 <div className={styles.tagline}>🎁 Agendamiento Confirmado</div>
                 <h2>Elige el horario de tu Asesoría Gratis 📅</h2>
-                <p style={{ color: "#4b6358", fontSize: "0.98rem", marginTop: "0.25rem" }}>
+                <p className={styles.scheduleSubtext}>
                   Selecciona el día y la hora disponible que mejor te convenga para conectarnos por Google Meet.
                 </p>
                 <div style={{ marginTop: "0.75rem" }}>
@@ -441,7 +451,7 @@ ${respSummary}
 
               {/* Selector de Días */}
               <div>
-                <label style={{ fontSize: "0.92rem", fontWeight: "700", color: "#1f3d2f" }}>
+                <label style={{ fontSize: "0.95rem", fontWeight: "700", color: "#ffffff", display: "block", marginBottom: "0.5rem" }}>
                   1. Selecciona un día disponible:
                 </label>
                 <div className={styles.datePickerGrid}>
@@ -470,11 +480,11 @@ ${respSummary}
 
               {/* Selector de Horas */}
               <div className={styles.timeSlotsSection}>
-                <label style={{ fontSize: "0.92rem", fontWeight: "700", color: "#1f3d2f" }}>
+                <label style={{ fontSize: "0.95rem", fontWeight: "700", color: "#ffffff", display: "block", marginBottom: "0.5rem" }}>
                   2. Horarios disponibles ({selectedDayObj ? selectedDayObj.fullDateLabel : ""}):
                 </label>
                 {loadingSlots ? (
-                  <p style={{ color: "#627d72", fontSize: "0.9rem", marginTop: "0.5rem" }}>
+                  <p style={{ color: "#a0a0a0", fontSize: "0.9rem", marginTop: "0.5rem" }}>
                     Cargando horarios disponibles...
                   </p>
                 ) : (
@@ -507,7 +517,7 @@ ${respSummary}
 
               {/* Formulario de Contacto */}
               <form onSubmit={handleConfirmMeeting} className={styles.formSection}>
-                <label style={{ fontSize: "0.98rem", fontWeight: "800", color: "#0f291e" }}>
+                <label style={{ fontSize: "1rem", fontWeight: "800", color: "#ffffff", display: "block", marginBottom: "0.25rem" }}>
                   3. Tus datos para confirmar y enlazar la reunión:
                 </label>
                 <div className={styles.formGrid}>
@@ -585,7 +595,7 @@ ${respSummary}
                       </>
                     )}
                   </button>
-                  <p style={{ fontSize: "0.82rem", color: "#627d72", textAlign: "center", marginTop: "0.75rem" }}>
+                  <p style={{ fontSize: "0.82rem", color: "#a0a0a0", textAlign: "center", marginTop: "0.75rem" }}>
                     Al confirmar, tus respuestas se guardarán en la base de datos y se abrirá WhatsApp con los detalles de tu cita.
                   </p>
                 </div>
@@ -608,10 +618,10 @@ ${respSummary}
         {currentStep > QUESTIONS.length && successInfo && (
           <div className={`${styles.card} ${styles.successCard}`}>
             <div className={styles.successIcon}>✓</div>
-            <h2 style={{ fontSize: "1.9rem", color: "#0f291e", marginBottom: "0.5rem", fontWeight: 800 }}>
+            <h2 className={styles.successTitle}>
               ¡Reunión Agendada Exitosamente! 🎉
             </h2>
-            <p style={{ color: "#374151", fontSize: "1.1rem", maxWidth: "480px", margin: "0 auto 1.5rem" }}>
+            <p className={styles.successDesc}>
               Muchas gracias, <strong>{successInfo.name}</strong>. Tu cita y respuestas han quedado guardadas para el día <strong>{successInfo.dateFormatted}</strong> a las <strong>{successInfo.selectedTime}</strong>.
             </p>
 
